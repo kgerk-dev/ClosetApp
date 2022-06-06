@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- List of top style
+           <item>Short Sleeve</item>
+        <item>Long Sleeve</item>
+        <item>Tank top</item>
+        <item>Blouse</item>-->
+
+    <item
+        android:id="@+id/ShortSleeve"
+        android:title="Short Sleeve"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/LongSleeve"
+        android:title="Long Sleeve"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/TankTop"
+        android:title="Tank Top"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/Blouse"
+        android:title="Blouse"
+        app:showAsAction="never"
+        />
+</menu>

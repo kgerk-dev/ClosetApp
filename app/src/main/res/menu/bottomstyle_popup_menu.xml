@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- List of Colors
+       <item>Pants</item>
+        <item>Shorts</item>
+        <item>Dress Pants</item>
+        <item>Skirt</item>-->
+
+    <item
+        android:id="@+id/Pants"
+        android:title="pants"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/Shorts"
+        android:title="pants"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/DressPants"
+        android:title="Dress Pants"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/Skirt"
+        android:title="Skirt"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/SweatPants"
+        android:title="Sweat Pants"
+        app:showAsAction="never"
+        />
+
+
+</menu>

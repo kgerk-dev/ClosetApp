@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- List of Brands
+        <item>Other</item>
+        <item>Gucci</item>
+        <item>Under Armour</item>
+        <item>Nike</item>-->
+    <item
+        android:id="@+id/Nike"
+        android:title="Nike"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/Gucci"
+        android:title="Gucci"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/UnderArmour"
+        android:title="Under Armour"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/Other"
+        android:title="Other"
+        app:showAsAction="never"
+        />
+</menu>

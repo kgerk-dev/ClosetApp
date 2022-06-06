@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- List of Clothing type
+       <item>Top</item>
+       <item>Bottom</item>
+       <item>Shoes</item>
+       <item>OuterWear</item>-->
+
+    <item
+        android:id="@+id/Top"
+        android:title="Top"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/Bottom"
+        android:title="Bottom"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/Shoes"
+        android:title="Shoes"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/OuterWear"
+        android:title="OuterWear"
+        app:showAsAction="never"
+        />
+   </menu>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- List of shoe type
+    <item>Sneakers</item>
+    <item>Boots</item>
+    <item>Dress Shoes</item> -->
+    <item
+        android:id="@+id/Sneakers"
+        android:title="Sneakers"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/Boots"
+        android:title="Boots"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/DressShoes"
+        android:title="Dress Shoes"
+        app:showAsAction="never"
+        />
+</menu>

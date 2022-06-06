@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/clothing_nav_graph"
+        android:title="Closet"
+        android:icon="@drawable/ic_closet_home"/>
+    <item
+        android:id="@+id/outfit_nav_graph"
+        android:title="Outfits"
+        android:icon="@drawable/ic_outfit_page"/>
+
+    <item
+        android:id="@+id/travel_list_nav_graph"
+        android:title="Travel List"
+        android:icon="@drawable/travel_list_icon"/>
+</menu>

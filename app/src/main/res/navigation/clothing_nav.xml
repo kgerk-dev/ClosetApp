@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clothing_nav_graph"
+    app:startDestination="@+id/clothingListFragment">
+
+    <fragment
+        android:id="@+id/clothingListFragment"
+        android:name="com.example.allin.fragments.list.ListFragment"
+        android:label="Closet"
+        tools:layout="@layout/fragment_clothing_list">
+        <!-- Action ADD New Clothing Item Button -->
+        <action
+            android:id="@+id/action_clothingListFragment_to_addClothingFragment"
+            app:destination="@id/addClothingFragment" />
+        <!-- Navigate to Update Fragment when selecting an Item in ListFragment -->
+        <action
+            android:id="@+id/action_clothingListFragment_to_updateClothingFragment"
+            app:destination="@id/updateClothingFragment" />
+        <action
+            android:id="@+id/action_clothingListFragment_to_favoriteListFragment"
+            app:destination="@id/favoriteListFragment" />
+    </fragment>
+
+    <!-- Adding new Clothing from Floating Action Button brings to new screen -->
+    <fragment
+        android:id="@+id/addClothingFragment"
+        android:name="com.example.allin.fragments.add.AddFragment"
+        android:label="Add New Clothing Item"
+        tools:layout="@layout/fragment_add">
+        <!-- Return to ClothingList fragment -->
+        <action
+            android:id="@+id/action_addClothingFragment_to_clothingListFragment"
+            app:destination="@id/clothingListFragment"
+            app:popUpTo="@id/clothingListFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Update Clothing Fragment on Selecting an item in ListAdapter -->
+    <fragment
+        android:id="@+id/updateClothingFragment"
+        android:name="com.example.allin.fragments.update.UpdateFragment"
+        android:label="Edit Clothing Item"
+        tools:layout="@layout/fragment_update">
+        <action
+            android:id="@+id/action_updateClothingFragment_to_clothingListFragment"
+            app:destination="@id/clothingListFragment"
+            app:popUpTo="@id/clothingListFragment"
+            app:popUpToInclusive="true" />
+        <!-- This value allows us to navigate between pages carrying a value set in the argument parameter -->
+        <!-- Go to ListAdapter -> OnBindViewHolder -> local variable action -->
+        <argument
+            android:name="currentClothing"
+            app:argType="com.example.allin.model.Clothing" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteListFragment"
+        android:name="com.example.allin.FavoriteListFragment"
+        android:label="Favorites"
+        tools:layout="@layout/fragment_favorite_list" >
+        <action
+            android:id="@+id/action_favoriteListFragment_to_clothingListFragment"
+            app:destination="@id/clothingListFragment"
+            app:popUpTo="@id/clothingListFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

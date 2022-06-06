@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">AllIn</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="total_items">Total Items:</string>
+
+    <string-array name="Clothing_type">
+        <item>Top</item>
+        <item>Bottom</item>
+        <item>Shoes</item>
+        <item>OuterWear</item>
+    </string-array>
+
+    <string-array name="top_style">
+        <item>Short Sleeve</item>
+        <item>Long Sleeve</item>
+        <item>Tank top</item>
+        <item>Blouse</item>
+    </string-array>
+
+    <string-array name="bottom_style">
+        <item>Pants</item>
+        <item>Shorts</item>
+        <item>Dress Pants</item>
+        <item>Skirt</item>
+        <item>Sweat Pants</item>
+    </string-array>
+
+    <string-array name="shoes_style">
+        <item>Sneakers</item>
+        <item>Boots</item>
+        <item>Dress Shoes</item>
+    </string-array>
+
+    <string-array name="outerwear_style">
+        <item>Coat</item>
+        <item>Jacket</item>
+        <item>Sweater</item>
+        <item>Hoodie</item>
+    </string-array>
+
+    <string-array name="colors">
+        <item>Grey</item>
+        <item>White</item>
+        <item>Black</item>
+        <item>Brown</item>
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Purple</item>
+        <item>Pink</item>
+        <item>Multicolor</item>
+    </string-array>
+
+    <string-array name="brands">
+        <item>Other</item>
+        <item>Gucci</item>
+        <item>Under Armour</item>
+        <item>Nike</item>
+    </string-array>
+
+    <string-array name="themes">
+        <item>Athletic</item>
+        <item>Casual</item>
+        <item>Business Casual</item>
+        <item>School</item>
+        <item>Swimwear</item>
+        <item>Work</item>
+        <item>Lounge Wear</item>
+    </string-array>
+</resources>

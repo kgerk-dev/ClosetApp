@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- List of Themes
+        1. <item>Athletic</item>
+        2. <item>Casual</item>
+        3. <item>Business Casual</item>
+        4. <item>School</item>
+        5. <item>Swimwear</item>
+        6. <item>Work</item>
+        7. <item>Lounge Wear</item>-->
+    <item
+        android:id="@+id/Athletic"
+        android:title="Athletic"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/Casual"
+        android:title="Casual"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/Business"
+        android:title="Business"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/School"
+        android:title="School"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/Swimwear"
+        android:title="Swimwear"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/Work"
+        android:title="Work"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/LoungeWear"
+        android:title="LoungeWear"
+        app:showAsAction="never"
+        />
+</menu>

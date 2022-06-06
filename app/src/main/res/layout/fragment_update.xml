@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".fragments.update.UpdateFragment">
+
+    <!-- Section that contains the image view meant to be change -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="246dp"
+        android:layout_height="223dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Blank Image view meant to be changed upon picture taken or gallery image selected-->
+        <ImageView
+            android:id="@+id/updatedclothing_item_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#D1D1D1"
+            android:cropToPadding="true"
+            android:scaleType="centerInside" />
+
+    </LinearLayout>
+    <!-- Camera Button -->
+    <!-- Meant to open the camera app -->
+    <ImageButton
+        android:id="@+id/updatecamera_button"
+        android:layout_width="90dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <!-- Image Gallery Button -->
+    <!-- Meant to Open the Gallery button upon being pressed -->
+    <ImageButton
+        android:id="@+id/updateimage_gallery_button"
+        android:layout_width="100dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/updatecamera_button"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+
+        <TextView
+            android:id="@+id/updateType_editText"
+            android:layout_width="137dp"
+            android:layout_height="46dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="356dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Clothing Type"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.021"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/updateType_editText2"
+            android:layout_width="170dp"
+            android:layout_height="53dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="352dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Clothing Type"
+            android:textColor="@color/main_blue"
+            android:textSize="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.226"
+            app:layout_constraintStart_toEndOf="@+id/updateType_editText"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/updateColor"
+            android:layout_width="113dp"
+            android:layout_height="52dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="68dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Color"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.016"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateStyle" />
+
+        <TextView
+            android:id="@+id/updateColor2"
+            android:layout_width="188dp"
+            android:layout_height="47dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="76dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Color"
+            android:textColor="@color/main_blue"
+            android:textSize="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/updateColor"
+            app:layout_constraintTop_toBottomOf="@+id/updateStyle2" />
+
+        <TextView
+            android:id="@+id/updateStyle"
+            android:layout_width="111dp"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Style"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.053"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateType_editText" />
+
+        <TextView
+            android:id="@+id/updateStyle2"
+            android:layout_width="156dp"
+            android:layout_height="44dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="76dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Style"
+            android:textColor="@color/main_blue"
+            android:textSize="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.937"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateType_editText2" />
+
+        <EditText
+          android:id="@+id/updateDescrip"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginHorizontal="32dp"
+          android:layout_marginTop="20dp"
+          android:ems="10"
+          android:inputType="textPersonName"
+          android:minHeight="48dp"
+          android:text="Description"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/update_dateAddedButton" />
+
+
+        <TextView
+            android:id="@+id/updateBrand_editText"
+            android:layout_width="114dp"
+            android:layout_height="47dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="52dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Brand"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateColor" />
+
+        <TextView
+            android:id="@+id/updateBrand_editText2"
+            android:layout_width="193dp"
+            android:layout_height="47dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="56dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Brand"
+            android:textColor="@color/main_blue"
+            android:textSize="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateColor2" />
+
+        <TextView
+            android:id="@+id/updateTheme_editText"
+            android:layout_width="123dp"
+            android:layout_height="46dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="56dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Theme"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.02"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateBrand_editText" />
+
+        <TextView
+            android:id="@+id/updateTheme_editText2"
+            android:layout_width="181dp"
+            android:layout_height="46dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="52dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Theme"
+            android:textColor="@color/main_blue"
+            android:textSize="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateBrand_editText2" />
+
+        <TextView
+            android:id="@+id/update_DateAddedTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="84dp"
+            android:text="Date Added To Closet"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateTheme_editText" />
+
+        <Button
+          android:id="@+id/update_dateAddedButton"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginHorizontal="32dp"
+          android:layout_marginTop="8dp"
+          android:text="Mon, Jan 1, 2022"
+          android:textAlignment="center"
+          android:textSize="20sp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/update_DateAddedTitle" />
+
+      <Button
+          android:id="@+id/upButton"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginHorizontal="32dp"
+          android:layout_marginTop="12dp"
+          android:layout_marginBottom="32dp"
+          android:text="Update"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/updateDescrip"
+          app:layout_constraintVertical_bias="0.056" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="55dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/updateType_editText"
+            app:layout_constraintHorizontal_bias="0.689"
+            app:layout_constraintStart_toStartOf="@+id/updatecamera_button"
+            app:layout_constraintTop_toBottomOf="@+id/updateType_editText"
+            app:srcCompat="@drawable/edit_icon"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/updateColor"
+            app:layout_constraintHorizontal_bias="0.63"
+            app:layout_constraintStart_toStartOf="@+id/updateColor"
+            app:layout_constraintTop_toBottomOf="@+id/updateColor"
+            app:srcCompat="@drawable/edit_icon"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/updateBrand_editText"
+            app:layout_constraintHorizontal_bias="0.772"
+            app:layout_constraintStart_toStartOf="@+id/updateBrand_editText"
+            app:layout_constraintTop_toBottomOf="@+id/updateBrand_editText"
+            app:srcCompat="@drawable/edit_icon"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="@+id/updateTheme_editText"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="@+id/updateTheme_editText"
+            app:layout_constraintTop_toTopOf="@+id/updateTheme_editText"
+            app:srcCompat="@drawable/edit_icon"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/updateStyle"
+            app:layout_constraintHorizontal_bias="0.412"
+            app:layout_constraintStart_toStartOf="@+id/updateStyle"
+            app:layout_constraintTop_toBottomOf="@+id/updateStyle"
+            app:srcCompat="@drawable/edit_icon"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </ScrollView>

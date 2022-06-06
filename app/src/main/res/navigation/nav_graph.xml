@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/clothing_nav_graph">
+
+    <include app:graph="@navigation/clothing_nav"/>
+    <include app:graph="@navigation/outfit_nav"/>
+
+    <include app:graph="@navigation/travel_list_nav_graph"/>
+</navigation>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/travel_list_nav_graph"
+    android:label="Preview Outfit"
+    app:startDestination="@id/packingListFragment">
+
+    <fragment
+        android:id="@+id/packingListFragment"
+        android:name="com.example.allin.PackingListFragment"
+        android:label="Packing List"
+        tools:layout="@layout/fragment_packing_list">
+        <action
+            android:id="@+id/action_travelListFragment_to_addPackingListItemFragment"
+            app:destination="@id/addPackingListItemFragment" />
+        <action
+            android:id="@+id/action_travelListFragment_to_packingListDisplayFragment"
+            app:destination="@id/packingListDisplayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPackingListItemFragment"
+        android:name="com.example.allin.fragments.add.AddNewPackingListFragment"
+        android:label="Add New Packing List"
+        tools:layout="@layout/fragment_add_packing_list_item">
+        <action
+            android:id="@+id/action_addPackingListItemFragment_to_travelListFragment"
+            app:destination="@id/packingListFragment"
+            app:popUpTo="@id/packingListFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_addPackingListItemFragment_to_packingListChooseOutfits"
+            app:destination="@id/packingListChooseOutfits" />
+    </fragment>
+    <fragment
+        android:id="@+id/packingListChooseOutfits"
+        android:name="com.example.allin.SelectOutfitsForPackingList"
+        android:label="Select Outfits for List"
+        tools:layout="@layout/fragment_packing_list_choose_outfits">
+        <action
+            android:id="@+id/action_packingListChooseOutfits_to_previewOutfitWithClothing"
+            app:destination="@id/previewOutfitWithClothing" />
+        <argument
+            android:name="newListName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/previewOutfitWithClothing"
+        android:name="com.example.allin.PreviewOutfitWithClothing"
+        android:label="fragment_preview_outfit_with_clothing"
+        tools:layout="@layout/fragment_preview_outfit_with_clothing">
+        <argument
+            android:name="selectedOutfit"
+            app:argType="com.example.allin.model.Outfit"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_previewOutfitWithClothing_to_packingListChooseOutfits"
+            app:destination="@id/packingListChooseOutfits"
+            app:popUpTo="@id/packingListChooseOutfits"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/packingListDisplayFragment"
+        android:name="com.example.allin.PackingListDisplayFragment"
+        android:label="Packing List Display"
+        tools:layout="@layout/fragment_packing_list_display">
+        <action
+            android:id="@+id/action_packingListDisplayFragment_to_travelListFragment"
+            app:destination="@id/packingListFragment"
+            app:popUpTo="@id/packingListFragment" />
+        <argument
+            android:name="selectedPackingList"
+            app:argType="com.example.allin.model.Packing"
+            app:nullable="true" />
+    </fragment>
+</navigation>
